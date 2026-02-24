@@ -39,7 +39,7 @@
     left: 50%;
     width: 2px;
     height: 245px;
-    background: black;
+    background: #020202;
     transform-origin: bottom center;
     transform: rotate(-55deg);
     /* z-index 2 : au-dessus de l'image du vumètre (background-image = z-index 0)
