@@ -1,7 +1,7 @@
 
 
 # McIntosh Limited Edition Digital Audio Player
-## Inspired by McIntosh x Virgil Abloh Concept: Sound is Culture **[LINK]([https://www.electronjs.org/](https://www.mcintoshlabs.com/about/news/mcintosh-virgil-abloh-ma8950-integrated-amplifier-concept))**
+## Inspired by McIntosh x Virgil Abloh Concept: Sound is Culture **[LINK]([https://www.electronjs.org/](https://www.mcintoshlabs.com/about/news/mcintosh-virgil-abloh-ma8950-integrated-amplifier-concept)**
 
 A premium web-based audio player inspired by the legendary McIntosh amplifier design, featuring authentic VU meters, professional 10-band equalizer with dedicated rotary knob, stereo balance with precision control and mandatory center snap, A-B loop functionality, mono mode, loudness compensation, power guard protection, customizable visual themes, and a stunning interface that captures the essence of high-end audio equipment.
 
