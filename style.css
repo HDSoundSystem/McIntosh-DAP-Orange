@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@300&family=Roboto:wght@300;400&display=swap');
+
+/* CSS variables */
+@import url('css/root.css');
+
+/* Main structure */
+@import url('css/chassis.css');
+
+/* Visual components */
+@import url('css/meters.css');
+@import url('css/display.css');
+
+/* Controls and buttons */
+@import url('css/controls.css');
+
+/* States and modes */
+@import url('css/states.css');
+
+/* Modals and popups */
+@import url('css/modals.css');
+
+/* Equalizer */
+@import url('css/eq.css');
+
+/* Mobile responsive */
+@import url('css/mobile.css');
+
+/* Info pop-up */
+@import url('css/info.css');
+
+body {
+    background-image: url('');
+
+    /* L'image ne se répète pas si elle est plus petite que l'écran */
+    background-repeat: no-repeat;
+
+    /* L'image est fixée : elle ne défile pas avec le contenu */
+    background-attachment: fixed;
+
+    /* L'image est centrée horizontalement et verticalement */
+    background-position: center;
+
+    /* L'image couvre tout l'espace disponible sans être déformée */
+    background-size: cover;
+    
+    background-color: var(--background-color-app);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: roboto, sans-serif;
+    overflow: hidden;
+}
+
+#audio-upload {
+    display: none;
+}
+
+#logo-alt {
+    display: none;
+}
+
+#folder-input {
+    display: none;
+}
+/* ================================
+   DROP OVERLAY
+   ================================ */
+.drop-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.80);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.drop-overlay.active {
+    display: flex;
+}
+
+.drop-overlay-box {
+    border: 2px dashed var(--mc-blue, #00c3ff);
+    border-radius: 12px;
+    padding: 40px 60px;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0, 195, 255, 0.25), inset 0 0 30px rgba(0, 195, 255, 0.05);
+    animation: drop-pulse 1.2s ease-in-out infinite;
+}
+
+.drop-overlay-icon {
+    font-size: 3rem;
+    color: var(--mc-blue, #00c3ff);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.drop-overlay-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: var(--mc-blue, #00c3ff);
+    text-transform: uppercase;
+}
+
+.drop-overlay-sub {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    color: rgba(0, 195, 255, 0.5);
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+
+@keyframes drop-pulse {
+    0%, 100% { box-shadow: 0 0 30px rgba(0, 195, 255, 0.2), inset 0 0 20px rgba(0, 195, 255, 0.03); }
+    50%       { box-shadow: 0 0 60px rgba(0, 195, 255, 0.45), inset 0 0 40px rgba(0, 195, 255, 0.08); }
+}
