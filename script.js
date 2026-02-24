@@ -585,45 +585,6 @@ folderInput && (folderInput.onchange = (e) => {
     }
 });
 
-let displayMode = 0; 
-
-document.getElementById('display-btn')?.addEventListener('click', () => {
-    if (!isPoweredOn) return;
-
-    const vfd = document.getElementById('vfd');
-    const meters = document.querySelectorAll('.meter');
-    const mcLogo = document.getElementById('mc-logo'); // Ton logo mc-logo.png
-    const labels = document.querySelectorAll('.label-green, .small-label, .small-label-option-menu');
-    
-    displayMode = (displayMode + 1) % 3;
-
-    if (displayMode === 0) {
-        // --- MODE NORMAL (Couleur d'origine) ---
-        vfd?.classList.remove('vfd-dimmed', 'force-off');
-        meters.forEach(m => m.classList.remove('meter-dimmed', 'meter-off'));
-        mcLogo?.classList.remove('logo-bw', 'logo-off');
-        labels.forEach(el => el.classList.remove('label-dimmed', 'label-off'));
-        showStatusBriefly("DISPLAY: BRIGHT");
-
-    } else if (displayMode === 1) {
-        // --- MODE DIMMED (Noir et Blanc + Tamisé) ---
-        vfd?.classList.add('vfd-dimmed');
-        meters.forEach(m => m.classList.add('meter-dimmed'));
-        mcLogo?.classList.add('logo-bw');
-        mcLogo?.classList.remove('logo-off');
-        labels.forEach(el => el.classList.add('label-dimmed'));
-        showStatusBriefly("DISPLAY: DIMMED");
-
-    } else if (displayMode === 2) {
-        // --- MODE OFF (Presque invisible) ---
-        vfd?.classList.add('force-off');
-        meters.forEach(m => m.classList.add('meter-off'));
-        mcLogo?.classList.add('logo-off');
-        labels.forEach(el => el.classList.add('label-off'));
-        showStatusBriefly("DISPLAY: OFF");
-    }
-});
-
 document.getElementById('random-btn')?.addEventListener('click', () => { if (isPoweredOn) { isRandom = !isRandom; updateVFDStatusDisplay(); } });
 document.getElementById('repeat-btn')?.addEventListener('click', () => { if (isPoweredOn) { repeatMode = (repeatMode + 1) % 3; updateVFDStatusDisplay(); } });
 document.getElementById('ab-loop-btn')?.addEventListener('click', () => {
