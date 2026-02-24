@@ -1,0 +1,74 @@
+{
+  "name": "mcintosh-Limited-Edition-dap",
+  "version": "1.0.0",
+  "description": "McIntosh-Limited-Edition-Digital-Audio-Player",
+  "keywords": [],
+  "homepage": "https://github.com/HDSoundSystem/McIntosh-DAP-Limited-Edition#readme",
+  "bugs": {
+    "url": "https://github.com/HDSoundSystem/McIntosh-DAP-Limited-Edition/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HDSoundSystem/McIntosh-DAP-Limited-Edition.git"
+  },
+  "license": "MIT",
+  "author": "Yohann Zaoui",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^26.6.10",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.HDSoundSystem.McIntoshDAP",
+    "productName": "McIntosh-DAP",
+    "win": {
+      "icon": "assets/img/favicon.ico",
+      "target": "portable"
+    },
+    "fileAssociations": [
+      {
+        "ext": "mp3",
+        "name": "MP3 Audio",
+        "description": "MP3 Audio File"
+      },
+      {
+        "ext": "flac",
+        "name": "FLAC Audio",
+        "description": "FLAC Audio File"
+      },
+      {
+        "ext": "wav",
+        "name": "WAV Audio",
+        "description": "WAV Audio File"
+      },
+      {
+        "ext": "m4a",
+        "name": "M4A Audio",
+        "description": "M4A Audio File"
+      },
+      {
+        "ext": "aac",
+        "name": "AAC Audio",
+        "description": "AAC Audio File"
+      },
+      {
+        "ext": "ogg",
+        "name": "OGG Audio",
+        "description": "OGG Audio File"
+      },
+      {
+        "ext": "mp4",
+        "name": "MP4 Audio",
+        "description": "MP4 Audio File"
+      }
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
