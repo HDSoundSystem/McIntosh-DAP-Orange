@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content">
+
+        <title>McIntosh Limited Edition Digital Audio Player</title>
+        <meta name="author" content="Yohann Zaoui">
+        <meta name="keywords"
+            content="McIntosh, Hi-Res Audio, Digital Audio Player, Mini, HiFi, Music Player, Web App, flac, mp3, wav, music, windows, mac, apple, ipad">
+
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="apple-touch-icon" href="assets/img/favicon.png">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <link rel="manifest" href="manifest.json">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/fontawesome7/css/all.min.css">
+    </head>
+    <body>
+        <input type="file" id="audio-upload"
+            accept=".flac,.mp3,.mp4,.wav,.m4a,.aac,.ogg" multiple>
+
+        <div class="chassis-wrapper">
+            <div class="side-trim side-left"></div>
+
+            <div class="amplifier-panel" id="amplifier-panel">
+                <!-- The components will be injected directly here without a wrapper -->
+            </div>
+
+            <div class="side-trim side-right"></div>
+        </div>
+
+        <!-- MODALS AND POPUPS -->
+        <div id="modals-section"></div>
+
+        <!-- DROP OVERLAY -->
+        <div id="drop-overlay" class="drop-overlay">
+            <div class="drop-overlay-box">
+            <img src="assets/img/DD_overlay_logo_mc.png" alt="McIntosh">
+                <span class="drop-overlay-icon"><i class="fas fa-music"></i></span>
+                <div class="drop-overlay-text">Drop your files</div>
+                <div class="drop-overlay-sub">FLAC · MP3 · WAV · M4A · AAC · OGG · MP4</div>
+            </div>
+        </div>
+
+        <audio id="main-audio" crossorigin="anonymous"></audio>
+
+        <!-- First, load the jsmediatags library. -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+        
+        <!-- Load the component loader and wait for it to finish. -->
+        <script src="js/component-loader.js"></script>
+        
+        <!-- Wrapper to wait for the components to be loaded before initializing the rest -->
+        <script>
+            // Wait for the components to load before loading other scripts.
+            document.addEventListener('componentsLoaded', function() {
+                console.log('🎵 Composants chargés, initialisation du lecteur audio...');
+                
+                // Load the audio engine
+                const audioEngine = document.createElement('script');
+                audioEngine.src = 'js/mcintosh-audio-engine.js';
+                document.body.appendChild(audioEngine);
+                
+                // Load the main script after the engine
+                audioEngine.onload = function() {
+                    const mainScript = document.createElement('script');
+                    mainScript.src = 'script.js';
+                    document.body.appendChild(mainScript);
+                };
+            });
+        </script>
+    </body>
+</html>

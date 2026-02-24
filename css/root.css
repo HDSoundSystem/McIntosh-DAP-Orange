@@ -1,0 +1,17 @@
+:root {
+    --release-number: "Limited Edition";
+    --background-color-app: #413d3d;
+    --chassis-shadow: #999999;
+    --mc-blue: #00c3ff;
+    --mc-green: #f8f8f8;
+    --panel-black: #fa9b1e;
+    --mc-led-green: #00ff41;
+    --mc-led-red: #ff0000;
+    --mc-red-button: #912624;
+    --mc-gold: #ffffff;
+    --border-bottom: #2e2e2e;
+    --background-matrix-display: #020202;
+    --background-option-menu: #000000;
+    --police-size-counter: 30px;
+    --police-size-label-counter: 12px;
+}

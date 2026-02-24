@@ -1,0 +1,88 @@
+/* INFO OVERLAY */
+#info-overlay-fix {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 99999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#info-overlay-fix img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid var(--mc-gold);
+    border-radius: 15px;
+    background: #000;
+    pointer-events: none;
+}
+
+.release-version {
+    margin-top: 20px;
+    color: var(--mc-gold);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(120, 107, 70, 0.5);
+}
+
+.release-version::after {
+    content: var(--release-number);
+    display: block;
+    margin-top: 20px;
+    color: var(--mc-gold);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(120, 107, 70, 0.5);
+}
+
+.github-link {
+    color: var(--mc-gold); /* Utilise ton doré McIntosh */
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    letter-spacing: 5px;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+.github-link:hover {
+    opacity: 1;
+    text-shadow: 0 0 8px var(--mc-gold);
+    color: #fff;
+}
+
+
+.mcintosh-footer-link:hover {
+    opacity: 1;
+}
+
+.mcintosh-footer-link:hover .mcintosh-mini-logo {
+    filter: brightness(1.1); /* L'image s'éclaire au survol */
+    outline: none; /* Supprime le cadre de sélection */
+    box-shadow: none;
+}
+
+.mcintosh-footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--mc-gold);
+    text-decoration: none !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+    outline: none !important;
+}
