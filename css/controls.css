@@ -56,7 +56,7 @@
 .knob-inner {
     width: 130px;
     height: 130px;
-    background: conic-gradient(#1a1a1a, #333, #1a1a1a, #444, #1a1a1a);
+    background: conic-gradient(#fa9b1e, #c08231, #fa9b1e, #c08231, #fa9b1e);
     border-radius: 50%;
     flex-shrink: 0;
 }
