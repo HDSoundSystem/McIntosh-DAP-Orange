@@ -1,13 +1,13 @@
 
 
 # McIntosh Limited Edition Digital Audio Player
-## Inspired by McIntosh x Virgil Abloh Concept: Sound is Culture **[LINK](https://www.mcintoshlabs.com/about/news/mcintosh-virgil-abloh-ma8950-integrated-amplifier-concept)**
+## Inspired by the high-end McIntosh MSA5500 2-Channel Streaming Integrated Amplifier and DS200 STREAMING DAC
 
 A premium web-based audio player inspired by the legendary McIntosh amplifier design, featuring authentic VU meters, professional 10-band equalizer with dedicated rotary knob, stereo balance with precision control and mandatory center snap, A-B loop functionality, mono mode, loudness compensation, power guard protection, customizable visual themes, and a stunning interface that captures the essence of high-end audio equipment.
 
 ![Status](https://img.shields.io/badge/status-active-success)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Version](https://img.shields.io/badge/version-Limited-blue)
+![Version](https://img.shields.io/badge/version-2.6.5-blue)
 
 
 ![543375630-9f65f1d2-5f77-458b-b0fc-5ec35e992042](https://github.com/user-attachments/assets/7bc36eb4-3abf-4167-862a-a5e87df7afc9)
