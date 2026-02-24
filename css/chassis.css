@@ -93,7 +93,7 @@
     width: 100%;
     height: 15px;
     /* A gradient that simulates the angle of the metal */
-    background-color: #181818;
+    background-color: #e68506;
 }
 
 /* Top metal trim (Bezel Top) */
@@ -106,7 +106,7 @@
     width: 100%;
     height: 15px;
     /* Inverted gradient to simulate an upward angle */
-    background-color: #181818;
+    background-color: #e68506;
 }
 
 /* --- BLACK AND WHITE LOGO (Dim Mode) --- */
