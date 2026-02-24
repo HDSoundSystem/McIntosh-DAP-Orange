@@ -22,15 +22,15 @@
     left: -55px;
     /* Gradient simulating brushed aluminum with a shine on the left edge */
     background: linear-gradient(to right,
-            #e0e0e0 0%,
+            #fc8f01 0%,
             /* Éclat extérieur */
-            #ffffff 15%,
+            #ee8904 15%,
             /* Point de lumière vive */
-            #bdbdbd 40%,
+            #f8930f 40%,
             /* Teinte moyenne */
-            #9e9e9e 90%,
+            #e7870a  90%,
             /* Ombre vers le verre */
-            #444444 100%
+            #fa9b1e 100%
             /* Jointure noire avec la façade */
         );
     box-shadow: -5px 15px 30px rgba(0, 0, 0, 0.4);
@@ -42,11 +42,11 @@
     right: -55px;
     /* Invert the gradient for the light */
     background: linear-gradient(to left,
-            #e0e0e0 0%,
-            #ffffff 15%,
-            #bdbdbd 40%,
-            #9e9e9e 90%,
-            #444444 100%);
+            #fc8f01  0%,
+            #ee8904  15%,
+            #f8930f  40%,
+            #e7870a 90%,
+            #fa9b1e 100%);
     box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.4);
     border-radius: 0 2px 2px 0;
 }
